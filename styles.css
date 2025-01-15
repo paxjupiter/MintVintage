@@ -1,0 +1,354 @@
+/*
+CIT 152 - WEEK 2  LAB - MintVintage Website
+Stylesheet
+AUTHOR: PAX MONTORO
+UPDATED: 09/25/2024
+*/
+
+/*PLEASE NOTE
+This stylesheet will be updated continually
+throughout the duration of the class project
+not all rules are specifically referenced in
+each assignment. Refer to comments to know
+which elements each section of rules is styling.
+*/
+
+/*
+COLOR PALETTE
+almost black: #0C0F15 rgba(12, 15, 21, 1)
+darkest warm grey: #50525A rgba(80, 82, 90, 1)
+darkest cool grey: #565C66 rgba(86, 92, 102, 1)
+brown-grey: #786C65 rgba(120, 108, 101, 1)
+lightest warm grey: #A4A2A1 rgba(164, 162, 161, 1)
+*/
+
+
+/*reset styles*/
+html {
+    font-size: 16px;
+}
+
+body, div, fieldset, form, header, head, legend, label {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*global styles*/
+body {
+    background: #0C0F15;
+    background: url("images/background.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Oswald", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #A4A2A1;
+}
+
+#main-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#content {
+    flex-grow: 1; /* Allow content to take up available space */
+    margin: 0 20px; /* Space between content and aside */
+}
+
+.asideContainer {
+    display: none; /* Hide aside by default */
+    width: 20%; /* Adjust width as necessary */
+    /*float: right;
+    clear: none;*/
+    background: rgba(12, 15, 21, 0.8);
+    width: 20%;
+    border-radius: 15px;
+    box-shadow: 10px 10px 25px #000000;
+    margin-right: 30px;
+}
+
+/* Show aside when on the home page */
+body.home .asideContainer {
+    display: block; /* Show aside only on home */
+}
+
+/* Center content when aside is hidden */
+body:not(.home) #content {
+    margin: 0; /* Remove margin */
+    width: 100%; /* Full width */
+}
+
+h1, h2 {
+    color: #786C65;
+    font-weight: bold;
+    padding: 0.5em;
+    font-size: 3em;
+}
+
+h3 {
+    padding-left: 30px;
+}
+
+p {
+    color: #A4A2A1;
+    padding: 0.5em;
+}
+
+/*registration form styles*/
+.formContainer, .submitContainer, .container, #contact-form {
+    background: rgba(12, 15, 21, 0.8);
+    margin: 0 auto;
+    margin-top: 5%;
+    /*width: 53%;*/
+    border-radius: 15px;
+    box-shadow: 10px 10px 25px #000000;
+}
+
+.submitContainer {
+    width: 25%;
+    text-align: center;
+}
+
+fieldset{
+    margin: 0.5em 3em 0.5em 3em;
+}
+
+.register {
+    padding: 0.5em 0 0 2em;
+    font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 3px #000000;
+    color: #786C65;
+}
+
+#username, #password, #confirmPassword, #email, #phone {
+    background-color: #565C66;
+    border: 0;
+    color: #FFFFFF;
+    padding: 0.2em;
+    border-radius: 10px;
+    font-family: "Oswald", Arial, Helvetica, sans-serif;
+    float: right;
+    width: 70%;
+}
+
+#name, #senderEmail, #message {
+    background-color: #565C66;
+    border: 0;
+    color: #FFFFFF;
+    padding: 0.2em;
+    margin: 1%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+/*registration form input accents*/
+input[type="submit"], .add-to-cart, .sendEmail, #checkoutButton{
+    float: right;
+    margin: 1.5em 0 2em 0;
+    width: 15%;
+    border: 0;
+    padding: 0.75em;
+    border-radius: 20px;
+    background-color: #565C66;
+    color:#FFFFFF;
+    font-weight: bold;
+    box-shadow: 1px 1px 6px #A4A2A1;
+    transition: background-color 0.5s;
+}
+
+#remove-button {
+    float: right;
+    margin: 1.5em 0 2em 0;
+    border: 0;
+    padding: 0.75em;
+    border-radius: 20px;
+    background-color: #565C66;
+    color:#FFFFFF;
+    font-weight: bold;
+    box-shadow: 1px 1px 6px #A4A2A1;
+    transition: background-color 0.5s;
+}
+
+input[type="submit"]:active, .add-to-cart:active, .sendEmail:active, #remove-button:active, #checkoutButton:active{
+    left: 2px;
+    position: relative;
+    top: 2px;
+}
+
+input[type="submit"]:hover, .add-to-cart:hover, .sendEmail:hover, #remove-button:hover, #checkoutButton:hover{
+    background-color: #786C65;
+    color:#FFFFFF;
+    font-weight: bold;
+}
+
+/*site nav styles*/
+nav{
+    background-color: #000000;
+
+}
+
+nav ul {
+    margin: 0 auto;
+}
+
+nav li {
+    display: inline-block;
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    margin: 0 auto;
+    width: 13%;
+}
+
+nav li a {
+    margin: auto;
+    text-decoration: none;
+    color: #A4A2A1;
+    font-weight: bold;
+}
+
+nav li a:hover {
+    color: #786C65;
+}
+
+nav li a:active {
+    left: 2px;
+    position: relative;
+    top: 2px;
+}
+
+/*product display styles*/
+#productContainer{
+    padding: 2%;
+}
+
+.card-image {
+    width: auto; /* Fixed size for images */
+    height: 400px;
+    margin: 0 auto;
+    margin-left: 75px;
+    border-radius: 15px;
+}
+
+.price {
+    font-size: 1.5rem;
+    margin-left: 10px; /* Space between name and price */
+}
+
+.inline {
+    display: inline-block;
+    margin: 0 10px; /* Space between elements */
+}
+
+/*Random MTG card art styling*/
+#card-carousel img {
+    height: 300px;
+    object-fit: cover; /* Ensure images fill the slide nicely */
+  }
+  
+  .carousel-caption {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for captions */
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+
+/*cart styles*/
+
+
+.card-col {
+    display: flex;
+    align-items: center;  
+    justify-content: flex-start;
+}
+
+.card-cart {
+    width: 100px;  
+    height: auto;
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px; 
+    border-radius: 8px;  
+}
+
+.table {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: separate; 
+    border-spacing: 0; 
+    border-radius: 20px; 
+    overflow: hidden; 
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.table th, .table td {
+    padding: 15px 8px 15px 8px;
+    text-align: left;
+}
+
+.table td {
+    background-color: rgba(255, 255, 255, 0.3); 
+}
+
+.table th {
+    background-color: rgba(0, 0, 0, 0.1); 
+}
+
+#cartTotal {
+    font-size: 2em;
+}
+
+/*misc*/
+
+.logo {
+    position: absolute;
+    left: 30px; 
+    z-index: 10; 
+    color: white; 
+    font-size: 10rem; 
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.9); 
+}
+
+#pokemon-sprite {
+    width: 300px; 
+    height: auto;
+    display: block;
+    margin: 0 auto; 
+    transition: transform 0.3s ease; 
+}
+
+#pokemon-sprite:hover {
+    transform: scale(1.1); 
+}
+
+/*socials*/
+.social-icons {
+    display: flex;
+    gap: 20px; /* Space between icons */
+    align-items: center;
+    float: right;
+    padding-right: 50px;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+  }
+  
+  .social-icons img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding-right: 15px;
+    margin-top: 20px;
+  }
+  
+  .social-icons img:hover {
+   filter: none; 
+  }
+  

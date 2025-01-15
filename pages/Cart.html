@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>MintVintage - Cart</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    
+    <!-- JavaScript -->
+    <script src="/scripts/siteNavigation.js"></script>
+    <script src="/scripts/cart.js"></script>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="/styles.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <div id="nav-container" onload="loadMenu()"></div>
+
+    <!-- Main Content -->
+    <div id="content">
+        <div class="container">
+            <h1>Shopping Cart</h1>
+            <p>Your selected items:</p>
+
+            <!-- Cart Table -->
+            <div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Images</th>
+                            <th>Price</th>
+                            <th>Description</th>
+                            <th>Remove</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cartTableBody">
+                        <!-- Cart items will be dynamically inserted here -->
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="4" style="text-align: right;"><strong>Total:</strong></td>
+                            <td id="cartTotal">$0.00</td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <br>
+            </div>
+            <!-- Checkout Button -->
+            <button id="checkoutButton" onclick="purchasePopUp()">Proceed to Checkout</button>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+    </div>
+</body>
+
+</html>
