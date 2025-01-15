@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
     //loadContent('pages/Home.html');
 
     function loadMenu() {
-        fetch("/MintVintage/pages/SiteNavigation.html")
+        fetch("./pages/SiteNavigation.html")
         .then(response => response.text())
         .then(data => {
             document.getElementById("nav-container").innerHTML = data;
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     console.log("nav menu links set.")
                     
                     if(page.includes('index.html'))
-                        loadContent('/MintVintage/pages/Home.html');
+                        loadContent('./pages/Home.html');
 
                         // Load the external HTML file into the #content div
                         loadContent(page);
@@ -59,12 +59,12 @@ document.addEventListener("DOMContentLoaded", function() {
 function loadContent(page) {
     console.log("Content loader called.");
 
-    // Check if the page is already a full path or needs '/MintVintage/' prepended
+    // Check if the page is already a full path or needs './' prepended
     let fullPath;
     if (page.startsWith('/')) {
         fullPath = page;  // absolute path, do not modify
     } else {
-        fullPath = `/MintVintage/${page}`;  // prepend base path for relative paths
+        fullPath = `./${page}`;  // prepend base path for relative paths
     }
 
     fetch(fullPath)

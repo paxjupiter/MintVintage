@@ -2,7 +2,7 @@
 //this is called in the loadContent() function. See above for thorough documentation - this is effectively a copy of the loadPokemonData() function
 function loadMTGData() {
     
-    fetch('/Mintvintage/textfiles/magiccards.txt')
+    fetch('./textfiles/magiccards.txt')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');

@@ -16,7 +16,7 @@ function loadPokemonData() {
         return; // Exit the function if the element doesn't exist
     }
 
-    fetch('/Mintvintage/textfiles/pokemoncards.txt')
+    fetch('./textfiles/pokemoncards.txt')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');

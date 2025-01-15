@@ -153,7 +153,7 @@ function submitForm(){
         //RegistrationSubmit.html WILL CALL getQueryParams FUNCTION
         //Use this to pass values from one page to another
 
-        window.open(`/MintVintage/pages/RegistrationSubmit.html${queryString}`, '_blank');
+        window.open(`./pages/RegistrationSubmit.html${queryString}`, '_blank');
 
     }
 
