@@ -1,0 +1,58 @@
+<!--
+CIT 152 - WEEK 3  ASSIGNMENT - MintVintage Registration Page
+HTML file
+AUTHOR: PAX MONTORO
+UPDATED: 09/25/2024
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>MintVintage - Template</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <!--JavaScript-->
+        <!-- Bootstrap Bundle with Popper.js -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="/Mintvintage/scripts/siteNavigation.js"></script>
+        <script src="/Mintvintage/scripts/randomPokemon.js"></script>
+        <script src="/Mintvintage/scripts/randomCardArt.js"></script>
+        <script src="/Mintvintage/scripts/loadMagicCards.js"></script>
+        <script src="/Mintvintage/scripts/loadPokemonCards.js"></script>
+        <script src="/Mintvintage/scripts/form.js"></script>
+        <script src="/Mintvintage/scripts/sendEmail.js"></script>
+        <script src="/Mintvintage/scripts/cart.js"></script>
+        <!--Styles-->
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="/Mintvintage/styles.css">
+        <!--Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    </head>
+    <header id="header">
+        <h1 id="logo" class="logo">MintVintage&#128142;</h1></header>
+    <body onload="displayFormResults()">
+        <div id="card-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner" id="carousel-images">
+              <!-- Slides will be injected here dynamically -->
+            </div>
+        </div> 
+        <div id="nav-container" onload="loadMenu()"></div>
+        <div id="main-container" style="display: flex;">
+            <div id="content">
+                <div class="submitContainer"> 
+                    <h2>Thank you for registering!</h2>
+                    <p>Here are the details you submitted:</p>
+                    <p>Username: <span id="displayUsername"></span></p>
+                    <p>Email: <span id="displayEmail"></span></p>
+                    <p>Phone: <span id="displayPhone"></span></p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,34 @@
+name: First Edition Team Rocket Charmander
+type: Pokémon
+price: 4.06
+front: images/Charmander_Front.JPG
+back: images/Charmander_Back.JPG
+description: Charmander is a beloved Fire-type Pokémon, known for its adorable appearance and fiery spirit. This card features unique artwork that captures Charmander’s playful nature. As one of the original starter Pokémon, Charmander evolves into Charmeleon and then Charizard, making it a favorite among trainers. Its ability to learn powerful moves like Flamethrower and Fire Spin showcases its potential in battles. This first edition card is a must-have for collectors, adding nostalgic value to any collection.
+
+name: Fossil Edition Non-Holographic Hitmonlee
+type: Pokémon
+price: 5.08
+front: images/Hitmonlee_Front.JPG
+back: images/Hitmonlee_Back.JPG
+description: Hitmonlee is a Fighting-type Pokémon known for its incredible kicking power and acrobatic fighting style. This card depicts Hitmonlee in an action-packed pose, highlighting its agility and strength. As a fan-favorite, Hitmonlee evolves from Hitmonchan and is known for its high attack stats, making it a formidable opponent in battles. With access to powerful moves like High Jump Kick and Seismic Toss, Hitmonlee is a valuable card for competitive play and a great addition for any Pokémon collection.
+
+name: Jungle Edition Non-Holographic Electrode
+type: Pokémon
+price: 3.40
+front: images/Electrode_Front.JPG
+back: images/Electrode_Back.JPG
+description: Electrode is an Electric-type Pokémon that is known for its high speed and explosive nature. This card features Electrode in its classic ball form, capturing its energetic and mischievous personality. Electrode is often used strategically in battles due to its ability to unleash powerful Electric-type moves like Thunderbolt. This card is not only a nostalgic piece for collectors but also a solid choice for players looking to build a strong Electric-type deck.
+
+name: First Edition Team Rocket Ekans
+type: Pokémon
+price: 1.00
+front: images/Ekans_Front.JPG
+back: images/Ekans_Back.JPG
+description: Ekans is a Poison-type Pokémon that embodies cunning and stealth. The card features Ekans coiled and ready to strike, showcasing its sleek, serpent-like body. Known for its ability to use moves like Poison Sting and Acid, Ekans evolves into Arbok, gaining even more power in battles. As a first edition card from the Team Rocket set, this piece is cherished by collectors and players alike for its unique design and competitive potential.
+
+name: First Edition Team Rocket Magikarp
+type: Pokémon
+price: 2.50
+front: images/Magikarp_Front.JPG
+back: images/Magikarp_Back.JPG
+description: Magikarp may seem weak, but it has a charm that makes it a fan favorite. Known for its splashy antics, this card captures Magikarp in its iconic flopping pose. Despite its low stats, Magikarp evolves into the powerful Gyarados, making it a strategic choice for trainers. With Flop as its base move, this card might not seem formidable, but its Rapid Evolution ability makes it a surprising asset in the right deck. As a first edition card, it holds significant value for collectors.

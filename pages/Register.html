@@ -1,0 +1,75 @@
+<!--
+CIT 152 - WEEK 3  ASSIGNMENT - MintVintage Registration Page
+HTML file
+AUTHOR: PAX MONTORO
+UPDATED: 09/25/2024
+-->
+<!DOCTYPE html>
+    <html lang="en"></html>
+        <head>
+            <title>MintVintage - Login</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width">
+            <!--JavaScript-->
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+            
+            <script src="/Mintvintage/scripts/siteNavigation.js"></script>
+            <script src="/Mintvintage/scripts/form.js"></script>
+            <!--Styles-->
+            <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+            <link rel="stylesheet" href="/Mintvintage/styles.css">
+            <!--Fonts-->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+        </head>
+        <body>
+            <div class="formContainer" id="loginDiv">
+                <form name="loginForm">
+                        <legend class="register">
+                            <h2>Log In:</h2>
+                        </legend>
+                        <fieldset class="username">Username: 
+                            <input type="text" name="username" id="username">
+                        </fieldset>
+                        <fieldset class="password">Password: 
+                            <input type="password" name="password" id="password">
+                        </fieldset>
+                        <fieldset class="button" onclick="showRegistration();return false">
+                            <input type="submit" value="Log In">
+                        </fieldset>
+                </form>
+            </div>
+            <br>
+            <br>
+            <div id="nav-container" onload="loadMenu()"></div>
+            <div id="content">
+                <div class="formContainer" id="registrationDiv" style="display:none">
+                    <form name="registrationForm" onsubmit="return submitForm()" method="post">
+                            <legend class="register">
+                                <h2>Please Register to Continue</h2>
+                            </legend>
+                            <fieldset class="username">Create Username: 
+                                <input type="text" name="username" id="username" placeholder="Whatever you want!">
+                            </fieldset>
+                            <fieldset class="password">Create Password: 
+                                <input type="password" name="password" id="password" placeholder="Must be 8 characters with upper, lower, number and symbol.">
+                            </fieldset>
+                            <fieldset class="confirmPassword">Confirm Password: 
+                                <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Make sure they match!">
+                            </fieldset>
+                            <fieldset class="email">Enter Email: 
+                                <input type="text" name="email" id="email" placeholder="myemail@example.com">
+                            </fieldset>
+                        <fieldset class="phoneNumber">Enter Phone Number: 
+                            <input type="text" name="phone" id="phone" placeholder="10 digits, no spaces or symbols.">
+                        </fieldset>
+                        <fieldset class="button">
+                            <input type="submit" value="Register">
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </body>
+</html>
